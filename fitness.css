@@ -1,0 +1,1004 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  outline:none ;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  background-color:rgba(28, 30, 43);
+  
+ }
+#wrapper {
+  width:900px;
+  margin: 30px auto 0px auto; 
+  overflow: hidden;
+  position: relative; /* used to center the popup inside the wrapper */
+
+}
+#user-container{
+   width:205px;
+   display:inline-block;
+   vertical-align:bottom;
+   margin-right: 40px;
+}
+#user{
+  width:205px;
+  height:145px;
+}
+#calories {
+  width:205px;
+  height:145px;
+  margin-top:30px;
+}
+#weight {
+  width:205px;
+  height:145px;
+  margin-top:30px;
+}
+ 
+.box{
+  box-sizing: border-box;
+  background-color:rgba(41, 44, 63);
+  border:1px solid rgba(41, 44, 63);
+  border-radius:12px; 
+  
+}
+#graph {
+  width:651px;
+  height:487px;
+  display:inline-block;
+  vertical-align:bottom;
+}
+#lifts-container{
+  margin-top:40px;
+}
+#macros {
+  width:428px;
+  height:220px;
+  margin-right:40px;
+  display:inline-block;
+  vertical-align:top;
+}
+#lifts {
+  width:428px;
+  height:220px;
+  display:inline-block;
+}
+#user-icon {
+  background: url('sprite/fitness test.png') no-repeat -316px -141px;
+	width: 102px;
+  height: 95px;
+  margin: 0 auto;
+} 
+  #user-message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    width: 102px;
+    color:rgba(255, 255, 255);
+    margin: 12px 0px 0px 52px;
+    word-spacing: 2px;
+}
+#calories-icon{
+  background: url('sprite/fitness test.png') no-repeat -338px -248px;
+	width: 50px;
+  height: 50px;
+  display:inline-block;
+}
+#calories-text{
+  color:rgba(255, 255, 255);
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  display:inline-block;
+  vertical-align: top;
+  margin-top:18px;
+  margin-left:4px;
+}
+.inside-box{
+  margin:8px 0px 0px 8px;
+  display: inline-block;
+  width: fit-content;
+}
+ .value{
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255);
+  font-size: 40px;
+  /* margin: 0 auto; */
+  /* width: fit-content; */
+  margin-top: 17px;
+  /*margin-left: 28%;*/
+ }
+ .unit-measurement{
+   font-size:14px;
+   color:rgba(80, 81, 91);
+   display: inline-block;
+   font-weight: 600;
+   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+   #weight-icon{
+    background: url('sprite/fitness test.png') no-repeat -334px -305px;
+    width:50px;
+    height:50px;
+    display:inline-block;
+   }
+   #weight-text {
+    color: rgba(255, 255, 255);
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+    margin-left: 4px;
+   }
+   #macros-icon{
+    background: url('sprite/fitness test.png') no-repeat -334px -363px;
+    width:50px;
+    height:50px;
+    display: inline-block;
+   }
+   #macros-text{
+    color: rgba(255, 255, 255);
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+    margin-left: 4px;
+   }
+    #macros-box{
+      margin-bottom:15px;
+    }
+   .carbs-fats-proteins{
+    width: 90%;
+    height: 30px;
+    display: inline-block;
+   }
+   #point-carbs {
+     width:8px;
+     height:8px;
+     background-color: rgba(8, 178, 227) ;
+     border:1px solid rgba(8, 178, 227) ;
+     border-radius:22px;
+     display: inline-block;
+   }
+   #macros-content{
+     margin-left: 13.55%;
+   }
+   #carbs-text{
+     display: inline-block;
+     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     color: rgba(8, 178, 227);
+     font-size: 14px;
+     vertical-align:middle;
+     margin-left:3%;
+     width:45.89px ;
+   }
+   #carbs-value{
+     color:rgba(255, 255, 255);
+     display: inline-block;
+     font-size: 25px;
+     margin-left:34%;
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   .unit{
+     display: inline-block;
+     color:rgba(80, 81, 91);
+     font-weight: 800;
+     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   }
+   #carbs-percentage{
+     display: inline-block;
+     color:rgba(8, 178, 227) ;
+     font-weight: bold;
+     float: right;
+     margin-top: 10px;
+     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   }
+   .underline{
+    width:90%;
+    height:1px;
+    background-color:rgba(80, 81, 91);
+    display: inline-block;
+    vertical-align: top;
+   }
+   #fats-text{
+    display: inline-block;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(254, 201, 59);
+    font-size: 14px;
+    vertical-align:middle;
+    margin-left:3%;
+    width:45.89px;
+   }
+   #fats-value{
+    color:rgba(255, 255, 255);
+    display: inline-block;
+    font-size: 25px;
+    margin-left:34%;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   #point-fats{
+    width:8px;
+    height:8px;
+    background-color: rgba(254, 201, 59) ;
+    border:1px solid rgba(254, 201, 59)  ;
+    border-radius:22px;
+    display: inline-block;
+   }
+   #fats-percentage {
+    display: inline-block;
+    color:rgba(254, 201, 59);
+    font-weight: bold;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float:right;
+    margin-top: 10px;
+   }
+   #point-proteins{
+     width:8px;
+     height:8px;
+     background-color: rgba(254, 128, 129) ;
+     border:1px solid rgba(254, 128, 129) ;
+     border-radius:22px;
+     display: inline-block; 
+   }
+   #protein-text{
+    display: inline-block;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(254, 128, 129);
+    font-size: 14px;
+    vertical-align:middle;
+    margin-left:3%;
+   }
+   #proteins-value{
+    color:rgba(255, 255, 255);
+    display: inline-block;
+    font-size: 25px;
+    margin-left:34%;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   #proteins-percentage{
+    display: inline-block;
+    color: rgba(254, 128, 129) ;
+    font-weight: bold;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: right;
+    margin-top: 10px;
+   }
+   #lifts-icon{
+    background: url('sprite/fitness test.png') no-repeat -334px -424px;
+    width:50px;
+    height:50px;
+    display:inline-block;
+   }
+   #lifts-box{
+    margin-bottom: 15px;
+   }
+   #deadlift-icon{
+    background: url('sprite/fitness test.png') no-repeat -409px -253px;
+    width:40px;
+    height:40px;
+    display: inline-block;
+   }
+   #bench-icon{
+    background: url('sprite/fitness test.png') no-repeat -411px -314px;
+    width:37px;
+    height:37px;
+    display: inline-block;
+   }
+   #squat-icon{
+    background: url('sprite/fitness test.png') no-repeat -409px -368px;
+    width:40px;
+    height:40px;
+    display: inline-block;
+   }
+   #lifts-content{
+    
+   }
+   #main-lifts{
+     width:100%;
+     display: inline-block;
+     display: flex;
+     justify-content: space-around;
+     height: 100%;  
+   }
+    #lifts-text{
+    color: rgba(255, 255, 255);
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 18px;
+    margin-left: 4px;
+    }
+    #underline-lifts{
+      width:80%;
+      margin-left:10%;
+      margin-top:6%;
+    }
+    #load-container{
+      width: 85%;
+      margin-left: 8%;
+      text-align: center;
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      height: 100%;
+    }
+    #deadlift-reps-load{
+      display: inline-block;
+      width: fit-content;
+    }
+    #deadlift-reps{
+      font-size: 22px;
+      color:rgba(255, 255, 255);
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #deadlift-multiplier{
+      display:inline-block;
+      color: rgba(82, 76, 202);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight:700;
+      font-size:18px;
+    }
+    #deadlift-lift{
+      display: inline-block;
+      font-size:25px;
+      color:rgba(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #benchpress-load{
+      display: inline-block;
+      width: fit-content;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #benchpress-reps{
+      font-size: 22px;
+      color:rgba(255, 255, 255);
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #benchpress-multiplier{
+      display:inline-block;
+      color: rgba(25, 170, 160);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight:700;
+      font-size:18px;
+    }
+    #benchpress-lift{
+      display: inline-block;
+      font-size:25px;
+      color:rgba(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #squat-load{
+      display: inline-block;
+      width:fit-content;
+    }
+    #squat-reps{
+      font-size: 22px;
+      color:rgba(255, 255, 255);
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #squat-multiplier{
+      display:inline-block;
+      color: rgba(116, 70, 178);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight:700;
+      font-size:18px;
+    }
+    #squat-lift{
+      display: inline-block;
+      font-size:25px;
+      color:rgba(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif
+    }
+    .hide-onhover{
+      margin: 0 auto;
+      width: fit-content;
+    }
+    #graph-status{
+      height: 22px;
+      display: inline-block;
+      width:fit-content;
+      color:rgba(255, 255, 255);
+      margin-top: 15px;
+      margin-left: 30px;
+      font-size: 16px;
+      font-family: Myriad Pro;
+      
+    }
+    .day-kg{
+      color:rgba(255, 255, 255);
+      margin-top: 5px;
+      width:7%;
+      display:inline-block;
+      height: 440px;
+      font-size: 16px;
+      position: relative;
+      font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial,
+    }
+    .column{
+     display:inline-block;
+     position: absolute;
+     bottom: 0px;
+     width: 100%;
+    }
+    #monday-kg{
+      width: fit-content;
+      height:20px;
+      text-align: center;
+    }
+    #monday-graph{
+      background-color: #085078;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+      border:1px solid;
+      border-color: #085078;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+      border-radius: 12px;
+      box-sizing: border-box;
+      width: 50%;
+      height:350px;
+      margin:0 auto;
+    }
+    #monday{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    }
+    #tuesday-kg{
+      width: fit-content;
+      height:20px;
+      text-align: center;
+    }
+    
+    #tuesday-graph{
+      background-color: #085078;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    width: 50%;
+    border:1px solid;
+    border-color: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height:300px;
+    margin:0 auto;
+    }
+    #tuesday{
+      margin-top: 10px;
+      width: 100%;
+      height: 60px;
+      text-align: center;
+    }
+    #wednesday-kg{
+    width: fit-content;
+    height: 20px;
+    text-align: center;
+    }
+    #wednesday-graph{
+      background-color: #085078;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    width: 50%;
+    border:1px solid;
+    border-color: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height:300px;
+    margin:0 auto;
+}
+    #wednesday{
+      margin-top: 10px;
+      width: 100%;
+      height: 60px;
+      text-align: center;
+}
+    #thursday-kg{
+   width: fit-content;
+   height: 20px;
+   text-align: center;
+  }
+  #thursday-graph{
+    background-color: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  width: 50%;
+  border:1px solid;
+  border-color: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  border-radius: 12px;
+  box-sizing: border-box;
+  height:300px;
+  margin:0 auto;
+}
+  #thursday{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+  }
+  #friday-kg{
+    width: fit-content;
+    height: 20px;
+    text-align: center;
+    }
+    #friday-graph{
+      background-color: #085078;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    width: 50%;
+    border:1px solid;
+    border-color: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height:300px;
+    margin:0 auto;
+  }
+    #friday{
+      margin-top: 10px;
+      width: 100%;
+      height: 60px;
+      text-align: center;
+    }
+    #saturday-kg{
+      width: fit-content;
+      height: 20px;
+      text-align: center;
+      }
+      #saturday-graph{
+        background-color: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+      width: 50%;
+      border:1px solid;
+      border-color: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+      border-radius: 12px;
+      box-sizing: border-box;
+      height:300px;
+      margin:0 auto;
+    }
+      #saturday{
+        margin-top: 10px;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+      }
+      #sunday-kg{
+        width: fit-content;
+        height: 20px;
+        text-align: center;
+        }
+        #sunday-graph{
+          background-color: #085078;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        width: 50%;
+        border:1px solid;
+        border-color: #085078;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        border-radius: 12px;
+        box-sizing: border-box;
+        height:300px;
+        margin:0 auto;
+      }
+        #sunday{
+          margin-top: 10px;
+          width: 100%;
+          height: 60px;
+          text-align: center;
+        }
+        #flex{
+         display: flex;
+         justify-content: space-evenly;
+        }
+       
+    .overlay{
+      background: #24C6DC;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      border-radius: 12px;
+      height: 145px;
+      width: 205px;
+      position: absolute;
+      opacity: 0;
+      transition: 1s;
+      z-index: 1;
+      cursor: pointer;
+    }
+    #overlay-macros{
+      width:428px;
+      height:220px;
+    }
+    #overlay-lifts{
+      width:428px;
+      height:220px;
+    }
+    #overlay-graph{
+      width:651px;
+      height:487px;
+    }  
+    .add-hover{
+    height: 57px;
+    width: 205px;
+    position: absolute;
+    color:rgba(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    opacity:0;
+    }
+    #add-graph{
+    width: 416px;
+    text-align: center;
+    line-height: 27px;
+    height: 34px;
+    display: inline-block;
+    }
+    #add-macros{
+    display: inline-block;
+    width: 300px;
+    }
+    #add-lifts{
+    display: inline-block;
+    width: 300px;
+    }
+    #mask-popup{
+      background-color:black;
+      opacity: 0.6;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      z-index: 99;
+      display: none;
+      top:0;
+    }
+    .popup-widget{
+      background-color: rgba(233, 233, 233);
+      width: 305px;
+      height: 270px;
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      border-radius: 12px;
+      display: none;
+      
+    }
+    .popup-title{
+      font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 25px;
+      text-align: center;
+      background-color: rgba(56, 188, 141);
+      color: #fff;
+      height: 50px;
+      vertical-align: middle;
+      line-height: 50px;
+      border-radius: 10px 10px 0px 0px;
+    }
+    .popup-text{
+      font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(80, 81, 91);
+    }
+    .input-div{
+      font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    .input-div input{
+      width: 122px;
+      height: 35px;
+      text-align: center;
+      margin: 12px auto 0px auto;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid rgba(80, 81, 91);
+      border-radius: 8px;
+      font-size: 22px;
+      color: rgba(80, 81, 91);
+    }
+    .submit-cancel{
+      margin: 10px 0 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    .submit{
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 45px;
+    background-color: rgb(60, 170, 231);
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 12px;
+    flex: 1;
+    margin: 5px 30px;
+    -webkit-box-shadow: 2px -3px 27px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -3px 27px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px -3px 27px -9px rgba(0,0,0,0.75);
+    cursor: pointer;
+    }
+    .cancel{
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    flex: 1;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 10px 30px;
+    -webkit-box-shadow: 2px -3px 27px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px -3px 27px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px -3px 27px -9px rgba(0,0,0,0.75);
+    cursor: pointer;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#weight-title{
+  background-color: rgb(237, 20, 91);
+}
+#macros-title{
+  background-color: rgb(238, 99, 82);
+}
+#lifts-title{
+  background-color: rgb(8, 178, 227);
+}
+#carbs-popup-text, #fats-popup-text, #proteins-popup-text{
+  display:inline-block;
+  font-size:20px;
+}
+#carbs-input-div, #fats-input-div, #proteins-input-div{
+  display:inline-block;
+}
+#carbs-input, #fats-input, #proteins-input{
+  width:50px;
+  height:20px;
+  margin-left: 15px;
+}
+.popup-block{
+  margin:0 auto;
+  width: fit-content;
+}
+#macros-popup{
+  height: 305px;
+}
+#lifts-popup{
+  height: 455px;
+}
+#deadlift-popup-text, #benchpress-popup-text, #squat-popup-text{
+  font-size: 20px;
+  font-weight: bold;
+}
+#deadlift-input-div, #benchpress-input-div, #squat-input-div{
+  display:inline-block;
+}
+#deadlift-kg-input, #benchpress-kg-input, #squat-kg-input{
+  width:50px;
+  margin-left: 12px;
+}
+.x-reps{
+    font-size: 19px;
+    color: rgba(80, 81, 91);
+    display: inline-block;
+    font-weight: 600;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#deadlift-reps-input, #benchpress-reps-input, #squat-reps-input{
+  width: 40px;
+}
+
+#graph-title{
+  background-color: rgb(117, 109, 109);
+}
+
+#deadlift-reps-popup, #benchpress-reps-popup , #squat-reps-popup{
+   font-size: 22px;
+   color: rgba(255, 255, 255);
+   display: inline-block;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.days{
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.kg-value{
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+    
+@media screen and (max-width:900px){
+  #wrapper {
+    width:100%;
+  }
+  
+  .overlay{
+    width: 90%;
+  }
+
+  #add-macros{
+    display: inline-block;
+    left:46%;
+    width: fit-content;
+  }
+
+  #add-lifts{
+    display: inline-block;
+    left:46%;
+    width: fit-content;
+  }
+
+
+  #overlay-macros, #overlay-lifts{
+    width: 90%;
+  }
+
+  .add-hover{
+    width: 90%;
+  }
+
+  #user-container {
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    
+  }
+
+  #user{
+    width:90%;
+    margin-left:5%;
+
+  }
+  #calories{
+    width:100%;
+  }
+  #weight{
+    width:100%
+  }
+  #graph{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:40px;
+  }
+  #lifts-container{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+#macros{
+  width:100%;
+}
+#lifts{
+  width:100%;
+  margin-top:40px;
+}
+#user-message {
+  margin: 0 auto;
+  width: 152px;
+  margin-top: 22px;
+}
+.inside-box {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+}
+#macros-content{
+  margin-left:10%;
+}
+#deadlift-reps-load {
+  display: inline-block;
+  float:left;
+}
+#squat-load {
+  display: inline-block;
+  float:right;
+}
+#graph-status{
+  margin:0 auto;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.popup-widget{
+  position: fixed;
+  width: 240px;
+}
+#mask-popup{
+  height: 1569px;
+}
+@media screen and (max-width:545px){
+  .kg-value{
+      margin-bottom: 12px;
+    transform: rotate(-45deg);
+}
+
+  
+@media screen and (max-width:439px){
+  #carbs-value {
+    color: rgba(255, 255, 255);
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 17%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#fats-value {
+  color: rgba(255, 255, 255);
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 17%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#proteins-value {
+  color: rgba(255, 255, 255);
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 17%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+}}}
