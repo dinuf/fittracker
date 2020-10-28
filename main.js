@@ -111,10 +111,10 @@ window.onload = function () {
 	function submitWeight(){
 
 		var weightInput = document.getElementById('weight-input').value;
-		CaloriesandWeightValues[1].innerHTML=weightInput;
+		CaloriesandWeightValues[1].innerHTML=+weightInput;
 		mask.style.display = 'none';
 		popup[1].style.display = 'none';
-		graphFunctionality(weightInput);
+		graphFunctionality(+weightInput);
 	}
 
 
