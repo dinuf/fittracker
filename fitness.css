@@ -103,7 +103,7 @@ body {
   display:inline-block;
 }
 #user-icon {
-  background: url('sprite/fitness test.png') no-repeat -316px -141px;
+  background: url('sprite/fitness.png') no-repeat -316px -141px;
 	width: 102px;
   height: 95px;
   margin: 0 auto;
@@ -117,7 +117,7 @@ body {
     word-spacing: 2px;
 }
 #calories-icon{
-  background: url('sprite/fitness test.png') no-repeat -338px -248px;
+  background: url('sprite/fitness.png') no-repeat -338px -248px;
 	width: 50px;
   height: 50px;
   display:inline-block;
@@ -154,7 +154,7 @@ body {
    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
  }
    #weight-icon{
-    background: url('sprite/fitness test.png') no-repeat -334px -305px;
+    background: url('sprite/fitness.png') no-repeat -334px -305px;
     width:50px;
     height:50px;
     display:inline-block;
@@ -169,7 +169,7 @@ body {
     margin-left: 4px;
    }
    #macros-icon{
-    background: url('sprite/fitness test.png') no-repeat -334px -363px;
+    background: url('sprite/fitness.png') no-repeat -334px -363px;
     width:50px;
     height:50px;
     display: inline-block;
@@ -303,7 +303,7 @@ body {
     margin-top: 10px;
    }
    #lifts-icon{
-    background: url('sprite/fitness test.png') no-repeat -334px -424px;
+    background: url('sprite/fitness.png') no-repeat -334px -424px;
     width:50px;
     height:50px;
     display:inline-block;
@@ -312,19 +312,19 @@ body {
     margin-bottom: 15px;
    }
    #deadlift-icon{
-    background: url('sprite/fitness test.png') no-repeat -409px -253px;
+    background: url('sprite/fitness.png') no-repeat -409px -253px;
     width:40px;
     height:40px;
     display: inline-block;
    }
    #bench-icon{
-    background: url('sprite/fitness test.png') no-repeat -411px -314px;
+    background: url('sprite/fitness.png') no-repeat -411px -314px;
     width:37px;
     height:37px;
     display: inline-block;
    }
    #squat-icon{
-    background: url('sprite/fitness test.png') no-repeat -409px -368px;
+    background: url('sprite/fitness.png') no-repeat -409px -368px;
     width:40px;
     height:40px;
     display: inline-block;
