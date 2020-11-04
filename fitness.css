@@ -944,8 +944,9 @@ body {
   margin-top: 22px;
 }
 .inside-box {
-  margin: 10px 0px 10px 0px;
+  margin: 10px auto 10px auto;
   text-align: center;
+  display: block;
 }
 #macros-content{
   margin-left:10%;
